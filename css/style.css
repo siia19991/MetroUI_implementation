@@ -1,0 +1,66 @@
+.style_title{font-size: 100px;
+color: #000;text-decoration: none;float:left;margin:0 auto;width:100%;background:url("../images/iamUnited.jpg") no-repeat right;}
+
+.style_title a{
+color: #000;text-decoration: none;}
+
+.style_title a:visited{
+color: #000;text-decoration: none;}
+
+.body_home{float:left;width:135%;margin:0 auto;}
+
+header{width:98%;margin:0 auto;float:left;border:2px solid red;position:fixed;margin-left:1%}
+
+body{background:url("../images/BG_manutd.jpg");float:left;margin:0 auto;}
+
+.inner_body{width:100%;margin:0 auto;background:#fff;height:auto;float:left;}
+.inner_body_tiles{width:40% !important;margin-top: 140px;float: left;margin-left:0.6%}
+.inner_body_tiles2{width:30% !important;margin-top: 101px;float: left;margin-right:1.1%}
+body > section > div > div.tiles.blue.tile-group.four-wide.inner_body_tiles2 > div{width:100% !important;margin-left:5%}
+
+.A1B1{height:228.5px;width:35%;margin: 1px !important;}
+.A1B2{height:228.5px;width:39%;margin: 1px !important;}
+.A2B2{height:228.5px;width:55%;margin: 1px !important;}
+.A2B1{height:228.5px;width:59%;margin: 1px !important;}
+
+.twitter_feed{float:left;height:300px;width:25%;margin-top: 140px;}
+
+.tile-title{font-weight: bold;color: cornsilk;font-family: cursive;text-decoration: underline !important;}
+
+.boxPara{width: 98%;font-family: cursive;}
+.linkSpan a{color: yellow !important;font-style: italic;}
+
+.appbar{height: 20px !important;}
+
+.strikersSpan{font-size: 2.2em !important;}
+.statsSection{margin-left:20%}
+
+.clear{clear:both;}
+h2.item {
+    cursor:pointer;
+    font-size:2em;
+    line-height:1.4em;
+    float:left;
+    transition:all .2s ease;
+    width:100px;
+}
+#pivot1{
+    position:relative;
+    overflow:hidden;
+    height:360px;
+    width:480px;
+    border:1px solid red;
+}
+#pivot1>.slide{
+    display:block;
+    height:100%;
+    padding:2%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+
+
+
