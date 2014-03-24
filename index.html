@@ -1,1 +1,412 @@
-/*Metro UI*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="css/MetroJs.css" type="text/css" />    
+ <link rel="stylesheet" href="css/style.css" type="text/css" />    
+</head>
+
+
+<body class="body_home">
+
+
+ <section class="main-content panorama clear-fix">
+ 
+ 
+<div class="inner_body">
+
+<header>
+        <div class="style_title"><a href="#">ManchesterUnited</a></div><div class="hashtagImg"></div>
+    </header>
+
+
+	<!-- Apply blue theme as default for all tiles, but use the tiles class to allow the theme to be swapped -->
+<div class="tiles blue tile-group four-wide inner_body_tiles">
+    <!-- Sliding Tile that shows 100% of the back tile every 3 seconds -->
+    <div class="live-tile A1B1" data-speed="750" data-delay="3000">
+        <span class="tile-title">Manutd Merchandise</span>
+        <div><img src="images/1.jpg" width="100%" height="100%"></div>
+        <div><p class="boxPara">Order exclusive Manutd merchandise and goodies!!! Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  <span class="linkSpan"><a href="#">Order Here >> </a></span></p></div>
+    </div>
+   
+    <!-- Carousel Tile that slides 4 tile faces every 2.5 seconds -->
+    <div class="live-tile A2B1" data-mode="carousel" data-direction="horizontal" data-delay="2500">
+         <span class="tile-title">Trending Images/News</span>
+		<div>
+           <img src="images/4.jpg" width="100%" height="100%">
+        </div>
+        <div>
+           <img src="images/5.jpg" width="100%" height="100%">
+        </div>
+        <div>
+            <img src="images/6.jpg" width="100%" height="100%">
+        </div>
+        <div>
+           <img src="images/8.jpg" width="100%" height="100%">
+        </div>
+    </div>
+	
+	
+	
+    <!-- Mango Flip List that triggers every 3 seconds -->
+    <div class="list-tile mango A2B2">
+     
+        <ul class="flip-list fourTiles" data-mode="flip-list" data-delay="2000">
+            <li>
+                <div><img src="images/9.jpg" width="100%" height="100%"></div>
+                <div class="boxPara"><a href="#">Team Profile >>  </a></div>
+            </li>
+            <li>
+                <div><img src="images/10.jpg" width="100%" height="100%"></div>
+                <div class="boxPara"><a href="#">Player Profiles >>  </a></div>
+            </li>
+            <li>
+                <div><img src="images/11.jpg" width="100%" height="100%"></div>
+                 <div class="boxPara"><a href="#">Trophy profiles >>  </a></div>
+            </li>
+            <li data-direction="horizontal">
+                <div><img src="images/12.jpg" width="100%" height="100%"></div>
+                 <div class="boxPara"><a href="#">Player profiles >>  </a></div>
+            </li>
+        </ul>
+    </div>
+	
+	 <!-- Red Flip Tile that flips every 4 seconds -->
+    <div class="red live-tile A1B2" data-mode="flip" data-delay="4000">            
+        <span class="tile-title">Trophy room</span>
+		<div>
+           <img src="images/2.jpg" width="100%" height="100%">
+        </div>
+        <div>
+           <img src="images/3.jpg" width="100%" height="100%">
+        </div>
+    </div>
+   
+</div>
+
+<!-- Activate live tiles -->
+
+ <script src="script/jquery-1.9.1.js" type="text/javascript"></script>
+	 <script src="script/MetroJs.js" type="text/javascript"></script>
+	  <script src="script/jquery.mousewheel.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+
+
+
+
+
+jQuery(function($) {
+                $('html, body').mousewheel(function(event, delta) {
+                        this.scrollLeft -= (delta * 30);
+                        event.preventDefault();
+                })
+        });
+
+    // apply regular slide universally unless .exclude class is applied 
+    // NOTE: The default options for each liveTile are being pulled from the 'data-' attributes
+    $(".live-tile, .flip-list").not(".exclude").liveTile();
+	
+	
+</script>
+	
+	<div class="tiles blue tile-group four-wide inner_body_tiles2">
+	
+<div class="red tile-group four-wide">
+    <div class="clear">
+        <h2 class="item accentColor">Table</h2>
+        <h2 class="item">Scores</h2>
+        <h2 class="item">Stats</h2>
+        <h2 class="item">Fixtures</h2>
+    </div>
+    <div id="pivot1" data-mode="carousel" data-start-now="false" data-direction="horizontal" data-repeat="0">        
+        <div>
+          <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0 auto}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Pos</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Played</th>
+    <th class="tg-031e">GD</th>
+    <th class="tg-031e"></th>
+  </tr>
+  <tr>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">Chelsea</td>
+    <td class="tg-031e">30</td>
+    <td class="tg-031e">33</td>
+    <td class="tg-031e">66</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">2</td>
+    <td class="tg-031e">Liverpool</td>
+    <td class="tg-031e">29</td>
+    <td class="tg-031e">41</td>
+    <td class="tg-031e">62</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">3</td>
+    <td class="tg-031e">Arsenal</td>
+    <td class="tg-031e">29</td>
+    <td class="tg-031e">25</td>
+    <td class="tg-031e">62</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4</td>
+    <td class="tg-031e">Manchester City</td>
+    <td class="tg-031e">27</td>
+    <td class="tg-031e">44</td>
+    <td class="tg-031e">60</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">5</td>
+    <td class="tg-031e">Tottenham Hotspur</td>
+    <td class="tg-031e">30</td>
+    <td class="tg-031e">-1</td>
+    <td class="tg-031e">53</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">6</td>
+    <td class="tg-031e">Everton</td>
+    <td class="tg-031e">28</td>
+    <td class="tg-031e">12</td>
+    <td class="tg-031e">51</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">7</td>
+    <td class="tg-031e">Manchester United</td>
+    <td class="tg-031e">29</td>
+    <td class="tg-031e">12</td>
+    <td class="tg-031e">48</td>
+  </tr>
+</table>
+        </div>
+        <div>
+       
+	   <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Sunday 16 March</th>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Tottenham0 - 1Arsenal</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Man Utd0 - 3Liverpool</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Saturday 15 March</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Aston Villa1 - 0Chelsea</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Swansea1 - 2West Brom</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Sunderland0 - 0Crystal Palace</td>
+  </tr>
+</table>
+	   
+	   
+        </div>
+        <div>
+            <div class="tile-strip two-wide statsSection">
+            <div id="tile1d" class="live-tile" data-mode="flip" data-start-now="false" data-repeat="0" data-delay="0" data-play-onhover="true">
+                <div><p><span class="metroLarge strikersSpan">Top Scorers!!</span></p></div>
+                <div><img src="images/strikers.jpg" width="100%" height="100%"></img></div>
+            </div>
+                <div class="live-tile exclude accent green"><span class="strikersSpan">Top Defenders</span></div>
+				<div class="live-tile exclude accent green"><span class="strikersSpan">Top Goalkeepers</span></div>
+			<div id="tile1d" class="live-tile" data-mode="flip" data-start-now="false" data-repeat="0" data-delay="0" data-play-onhover="true">
+                <div><p><span class="metroLarge strikersSpan">Top Defenders!!</span></p></div>
+                <div><img src="images/defenders.jpg" width="100%" height="100%"></img></div>
+            </div>
+            </div>
+        </div>
+        <div>
+		
+		    <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Saturday 22 March</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">12-45 Chelsea-Arsenal</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">15-00 Cardiff-Liverpool</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">15-00 Everton-Swansea</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">15-00 Hull-West Brom</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">15-00 Man City-Fulham</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">15-00 Newcastle-Crystal Palace</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">15-00 Norwich-Sunderland</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">17-30 West Ham-Man Utd</td>
+  </tr>
+</table>
+		
+		</div>
+    </div>
+</div>
+
+	
+	</div>
+	
+	<div class="twitter_feed">
+	<a class="twitter-timeline" href="https://twitter.com/saikirankannan/footballfeeds" data-widget-id="408899324823613442">Tweets from https://twitter.com/saikirankannan/footballfeeds</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	 </div>
+	 
+	 </section>
+	 
+	 
+	 
+	 <footer class="appbar">
+        <nav>
+        <ul id="menu" class="appbar-buttons">
+            <li>
+                <a href="#" class="home">Home</a>
+              
+            </li>
+            <li>
+                <a href="#" class="about">About</a>
+                <!--<span class="charm-title">About</span>-->
+            </li>
+            <li>
+                <a href="#" class="twitter">Manutd.com</a>
+                <!--<span class="charm-title">Twitter</span> -->
+            </li>
+        </ul>
+    </nav>
+    <a class="etc">&bull;&bull;&bull;</a>
+    <ul class="theme-options clear">
+         
+    </ul>
+    <ul class="base-theme-options clear">     
+    </ul>
+</footer>
+<script type="text/javascript">
+        var appBar, metroJs;
+        $(document).ready(function(){
+            appBar = $(".appbar").applicationBar({ 
+                preloadAltBaseTheme: true, 
+                bindKeyboard: true,
+                metroLightUrl: 'images/metroIcons_light.jpg',
+                metroDarkUrl: 'images/metroIcons.jpg'
+            });
+            // append the theme options 
+            metroJs = jQuery.fn.metrojs;
+            metroJs.theme.appendAccentColors({
+                accentListContainer: ".theme-options"
+            });
+            metroJs.theme.appendBaseThemes({
+                baseThemeListContainer: ".base-theme-options"
+            });
+        });
+		
+		
+		
+		
+		
+		
+		// carousel mode: Pivot
+// some options for the pivot
+// the class that will symbolize the active pivot
+var activeClass = 'accentColor';
+// a placeholder for the active index
+var currentIndex = 0;
+// the default direction
+var aniDirection = 'forward';
+// change the animationDirection based on the index
+var toggleDirection = false;
+// setup the pivot content using a carousel tile
+// im using animationComplete as a primitive queue for speedy clickers
+$("#pivot1").liveTile({
+    animationComplete:function(tileData, $front, $back){
+        var tmp,newIndex = tileData.currentIndex;
+        if(newIndex != currentIndex){
+            tmp = currentIndex;
+            currentIndex = newIndex;
+            pivotSelected(tmp);
+        }else{
+            // do cool stuff with tiles and things!
+        }
+    }
+});
+// other tiles
+$(".live-tile").not(".exclude").liveTile();
+
+$("h2.item").click(function(){
+    var newIndex = $(this).index();
+    pivotSelected(newIndex);
+});
+
+function pivotSelected(newIndex){
+    if(newIndex == currentIndex)
+        return;    
+    $("h2." + activeClass).removeClass(activeClass);
+    $("h2.item").eq(newIndex).addClass(activeClass);
+    if(toggleDirection)
+        aniDirection = (newIndex > currentIndex) ? 'forward' : 'backward';
+    currentIndex = newIndex;
+    $("#pivot1").liveTile("goto", { index: currentIndex, animationDirection: aniDirection });
+}
+</script>
+	 
+</body>
+
